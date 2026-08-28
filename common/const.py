@@ -16,6 +16,7 @@ MOONSHOT = "moonshot"
 MiniMax = "minimax"
 DEEPSEEK = "deepseek"
 MIMO = "mimo"  # Xiaomi MiMo
+AIMLAPI = "aimlapi"  # AI/ML API - unified access to 1,000+ models from every major provider
 CUSTOM = "custom"  # custom OpenAI-compatible API, bot_type won't auto-switch on model change
 MODELSCOPE = "modelscope"
 
@@ -163,6 +164,12 @@ MIMO_V2_PRO = "mimo-v2-pro"          # MiMo V2 Pro
 MIMO_V2_OMNI = "mimo-v2-omni"        # MiMo V2 Omni - multimodal
 MIMO_V2_FLASH = "mimo-v2-flash"      # MiMo V2 Flash - high-speed
 
+# AI/ML API (unified access to 1,000+ models; ids are "<vendor>/<model>")
+AIMLAPI_GPT_5_5 = "openai/gpt-5-5"
+AIMLAPI_CLAUDE_OPUS_5 = "anthropic/claude-opus-5"
+AIMLAPI_GEMINI_3_7_FLASH = "google/gemini-3-7-flash"
+AIMLAPI_DEEPSEEK_V4_PRO = "deepseek/deepseek-v4-pro-0813"
+
 # Doubao (Volcengine Ark)
 DOUBAO = "doubao"
 DOUBAO_SEED_2_1_PRO = "doubao-seed-2-1-pro-260628"
@@ -209,6 +216,9 @@ MODEL_LIST = [
 
               # Xiaomi MiMo
               MIMO, MIMO_V2_5_PRO, MIMO_V2_5, MIMO_V2_PRO, MIMO_V2_OMNI, MIMO_V2_FLASH,
+
+              # AI/ML API
+              AIMLAPI_GPT_5_5, AIMLAPI_CLAUDE_OPUS_5, AIMLAPI_GEMINI_3_7_FLASH, AIMLAPI_DEEPSEEK_V4_PRO,
 
               # Claude
               CLAUDE_OPUS_5, CLAUDE_SONNET_5, CLAUDE_FABLE_5, CLAUDE3, CLAUDE_4_8_OPUS, CLAUDE_4_7_OPUS, CLAUDE_4_6_SONNET, CLAUDE_4_6_OPUS, CLAUDE_4_OPUS, CLAUDE_4_5_SONNET, CLAUDE_4_SONNET, CLAUDE_3_OPUS, CLAUDE_3_OPUS_0229,
