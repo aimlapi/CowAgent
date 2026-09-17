@@ -58,7 +58,6 @@ desktop/build/*
 !desktop/build/build-backend.sh
 !desktop/build/build-feishu-vendor.py
 !desktop/build/entitlements.mac.plist
-!desktop/build/notarize-dmg.sh
 !desktop/build/installer.nsh
 
 # Icon authoring scratch dir: intermediate assets used to produce the final
@@ -70,3 +69,6 @@ desktop/resources/.icon-work/
 desktop/resources/bin/
 
 .wrangler/
+
+# Obsidian editor workspace (accidental commit vector; never part of the app)
+.obsidian/

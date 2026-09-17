@@ -31,6 +31,7 @@ CLAUDE_35_SONNET = "claude-3-5-sonnet-latest"  # "latest" tag always points to t
 CLAUDE_35_SONNET_1022 = "claude-3-5-sonnet-20241022"  # dated name pinned to a specific release
 CLAUDE_35_SONNET_0620 = "claude-3-5-sonnet-20240620"
 CLAUDE_4_OPUS = "claude-opus-4-0"
+CLAUDE_FABLE_5_1 = "claude-fable-5-1"    # Claude Fable 5.1 - alternative Claude 5 flagship
 CLAUDE_FABLE_5 = "claude-fable-5"        # Claude Fable 5 - alternative Claude 5 flagship
 CLAUDE_4_8_OPUS = "claude-opus-4-8"      # Claude Opus 4.8 - Agent recommended model
 CLAUDE_4_7_OPUS = "claude-opus-4-7"      # Claude Opus 4.7
@@ -56,6 +57,7 @@ GEMINI_31_FLASH_LITE_PRE = "gemini-3.1-flash-lite-preview"  # Gemini 3.1 Flash L
 GEMINI_35_FLASH = "gemini-3.5-flash"  # Gemini 3.5 Flash
 GEMINI_36_FLASH = "gemini-3.6-flash"  # Gemini 3.6 Flash
 GEMINI_37_FLASH = "gemini-3.7-flash"  # Gemini 3.7 Flash - Agent recommended model (default)
+GEMINI_38_FLASH = "gemini-3.8-flash"  # Gemini 3.8 Flash - latest flagship
 
 # OpenAI
 GPT35 = "gpt-3.5-turbo"
@@ -85,6 +87,7 @@ GPT_54_MINI = "gpt-5.4-mini"
 GPT_54_NANO = "gpt-5.4-nano"
 GPT_55 = "gpt-5.5"  # GPT-5.5 - top-tier (expensive), not default
 GPT_56_LUNA = "gpt-5.6-luna"    # GPT-5.6 Luna - default flagship model for GPT
+GPT_6_ASTRA = "gpt-6-astra"     # GPT-6 Astra - most intelligent flagship (Responses API, higher cost)
 GPT_56_TERRA = "gpt-5.6-terra"  # GPT-5.6 Terra
 GPT_56_SOL = "gpt-5.6-sol"      # GPT-5.6 Sol - highest intelligence, higher latency
 O1 = "o1-preview"
@@ -96,8 +99,10 @@ TTS_1_HD = "tts-1-hd"
 # DeepSeek
 DEEPSEEK_CHAT = "deepseek-chat"  # DeepSeek-V3 chat model
 DEEPSEEK_REASONER = "deepseek-reasoner"  # DeepSeek-R1 model
-DEEPSEEK_V4_FLASH = "deepseek-v4-flash"  # DeepSeek V4 Flash - default recommendation (thinking + tool calls)
+DEEPSEEK_FLASH = "deepseek-flash"  # DeepSeek V4.1 Flash - default recommendation (native multimodal, thinking + tool calls)
+DEEPSEEK_V4_FLASH = "deepseek-v4-flash"  # DeepSeek V4 Flash (thinking + tool calls)
 DEEPSEEK_V4_PRO = "deepseek-v4-pro"  # DeepSeek V4 Pro - stronger on complex tasks (thinking + tool calls)
+DEEPSEEK_V4_FLASH_VISION_EXP = "deepseek-v4-flash-vision-exp"  # DeepSeek V4 Flash vision (experimental, multimodal)
 
 # Baidu Qianfan / ERNIE
 ERNIE_5_1 = "ernie-5.1"  # ERNIE 5.1 - default recommendation, latest flagship
@@ -205,7 +210,7 @@ MODELSCOPE_MODEL_LIST = ["deepseek-ai/DeepSeek-R1-0528", "deepseek-ai/DeepSeek-R
 
 MODEL_LIST = [
               # DeepSeek
-              DEEPSEEK_V4_FLASH, DEEPSEEK_V4_PRO, DEEPSEEK_CHAT, DEEPSEEK_REASONER,
+              DEEPSEEK_FLASH, DEEPSEEK_V4_FLASH, DEEPSEEK_V4_PRO, DEEPSEEK_CHAT, DEEPSEEK_REASONER,
 
               # Baidu Qianfan / ERNIE
               QIANFAN, ERNIE_5_1, ERNIE_5, ERNIE_X1_1, ERNIE_45_TURBO_128K, ERNIE_45_TURBO_32K, ERNIE_4_TURBO_8K,
@@ -221,12 +226,12 @@ MODEL_LIST = [
               AIMLAPI_GPT_5_5, AIMLAPI_CLAUDE_OPUS_5, AIMLAPI_GEMINI_3_7_FLASH, AIMLAPI_DEEPSEEK_V4_PRO,
 
               # Claude
-              CLAUDE_OPUS_5, CLAUDE_SONNET_5, CLAUDE_FABLE_5, CLAUDE3, CLAUDE_4_8_OPUS, CLAUDE_4_7_OPUS, CLAUDE_4_6_SONNET, CLAUDE_4_6_OPUS, CLAUDE_4_OPUS, CLAUDE_4_5_SONNET, CLAUDE_4_SONNET, CLAUDE_3_OPUS, CLAUDE_3_OPUS_0229,
+              CLAUDE_OPUS_5, CLAUDE_SONNET_5, CLAUDE_FABLE_5_1, CLAUDE_FABLE_5, CLAUDE3, CLAUDE_4_8_OPUS, CLAUDE_4_7_OPUS, CLAUDE_4_6_SONNET, CLAUDE_4_6_OPUS, CLAUDE_4_OPUS, CLAUDE_4_5_SONNET, CLAUDE_4_SONNET, CLAUDE_3_OPUS, CLAUDE_3_OPUS_0229,
               CLAUDE_35_SONNET, CLAUDE_35_SONNET_1022, CLAUDE_35_SONNET_0620, CLAUDE_3_SONNET, CLAUDE_3_HAIKU,
               "claude", "claude-3-haiku", "claude-3-sonnet", "claude-3-opus", "claude-3.5-sonnet",
 
               # Gemini
-              GEMINI_37_FLASH, GEMINI_36_FLASH, GEMINI_35_FLASH, GEMINI_31_FLASH_LITE_PRE, GEMINI_31_PRO_PRE, GEMINI_3_PRO_PRE, GEMINI_3_FLASH_PRE, GEMINI_25_PRO_PRE, GEMINI_25_FLASH_PRE,
+              GEMINI_38_FLASH, GEMINI_37_FLASH, GEMINI_36_FLASH, GEMINI_35_FLASH, GEMINI_31_FLASH_LITE_PRE, GEMINI_31_PRO_PRE, GEMINI_3_PRO_PRE, GEMINI_3_FLASH_PRE, GEMINI_25_PRO_PRE, GEMINI_25_FLASH_PRE,
               GEMINI_20_FLASH, GEMINI_20_flash_exp, GEMINI_15_PRO, GEMINI_15_flash, GEMINI_PRO, GEMINI,
 
               # OpenAI
@@ -270,7 +275,7 @@ MODEL_LIST = MODEL_LIST + GITEE_AI_MODEL_LIST + MODELSCOPE_MODEL_LIST
 # Fallback model when `model` is missing from the config. Keep in sync with
 # config-template.json so a config without an explicit model behaves the same
 # as a fresh install.
-DEFAULT_MODEL = DEEPSEEK_V4_FLASH
+DEFAULT_MODEL = DEEPSEEK_FLASH
 
 # channel
 FEISHU = "feishu"

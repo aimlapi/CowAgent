@@ -1,7 +1,7 @@
 {
   "cow_lang": "auto",
   "channel_type": "web",
-  "model": "deepseek-v4-flash",
+  "model": "deepseek-flash",
   "deepseek_api_key": "",
   "deepseek_api_base": "https://api.deepseek.com/v1",
   "qianfan_api_key": "",
@@ -34,6 +34,7 @@
   "wecom_bot_secret": "",
   "web_host": "",
   "web_password": "",
+  "external_api_token": "",
   "agent": true,
   "agent_max_context_tokens": 64000,
   "agent_max_context_turns": 30,
@@ -42,12 +43,6 @@
   "subagent": {
     "enabled": true,
     "max_concurrent": 3
-  },
-  "agent_delegation": {
-    "enabled": true,
-    "max_depth": 3,
-    "timeout_seconds": 120,
-    "default_wait_seconds": 30
   },
   "enable_thinking": false,
   "reasoning_effort": "high",
